@@ -8,42 +8,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
     <header>
         <div class="nav-bar">
-            <h1>TechFuture Summit</h1>
+            <h1>TechConnect Summit</h1>
             <p>Bem-vindo ao TechFuture Summit 2025</p>
+            <p id="date"><strong>Data:</strong> 28 de Março de 2025</p>
             <p>O maior evento de tecnologia e inovação do ano! Junte-se a nós para explorar o futuro da tecnologia.</p>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#Sobre-Evento">Sobre Evento</a></li>
+                    <li><a href="#Participantes">Participantes</a></li>
+                    <li><a href="#Inscricao">Inscrição</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-        <section class="event">
+    <main>
+        <section class="evento" id="Sobre-Evento">
             <div class="details-event">
-                <h2>Sobre o Evento</h2>
-                <p><strong>Data:</strong>28 de Março de 2025</p>
+                <h2>Sobre o Evento:</h2>
                 <p><strong>Local:</strong></p>
-                <p>
-                    O TechFuture Summit 2025 será o maior evento de tecnologia e inovação deste ano.
-                    Junte-se a nós para explorar esta reunião com muitos especialistas, empresas e entusiastas dat tecnologia.
-                    Contaremos com a presença de vários 
+                <p id="about">
+                    O TechConnect Summit 2025 será o maior evento de tecnologia e inovação deste ano.
+                     Junte-se a nós para explorar, nesta reunião contaremos com a presença de vários
+                      desenvolvedores, designers e outros entusiastas da tecnologia.
+                       O local será no Centro De Convenções de Salvador as 13:00 a 18:00, tendo 3 nomes renomados como participantes,
+                        além de workshops e protótipos abertos para o uso do público.
                 </p>
-                
             </div>
-        </section>
-        <section>
-            <h2></h2>
-
-        </section>
-        <section></section>
+        </div>
+    </section>
+    <section>
+        <div class="participante" id="Participantes">
+            <h2>Sobre os participantes:</h2>
+            <p>
+                Contaremos com a presença de Rafaella Ballerini, Filipe Deschamps, Matheus Silva entre outros.
+            </p> 
+            <div>
+            <img src="img/Rafaella.png" alt="Rafaella Ballerini">
+             <p>Desenvolvedora de software, instrutora e criadora<br> de conteúdo em HTML, CSS, Javascript, Git, Github...</p>
+            <img src="img/Mateus.png" alt="Mateus Silva"> 
+            <p>Desenvolvedor full-stack e mobile, designer e instrutor.</p>
+            <img src="img/Filipe.png" alt="Filipe Deschamps">                       
+        </div>
+    </section>
+    <section id="Inscricao">
+        <h2>Inscrição:</h2>
+        <form>
+        <label for="nome">Nome Completo</label>
+        <input id="nome" type="text" required placeholder="digite seu nome">
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="digite seu email">
         <div class="marcações">
             <label for="Presencial">Presencial</label>
-            <input id="Presencial"  name="tipo" type="radio">
+            <input id="Presencial"  name="tipo" type="radio" required>
             <label for="Online" >Online</label>
-            <input id="Online"   name="tipo" type="radio"> <br>
+            <input id="Online"   name="tipo" type="radio" required> <br>
             <div class="TermoDeServ">
-            <label for="termos">Termos de Servíço</label>
-            <input id="termos" type="checkbox">
-            <textarea name="" id="textarea1"></textarea>
-        </div>
-        </div>
+                <label for="termos" id=>Termos de Servíço
+                </label>
+                <input id="termos" type="checkbox" required>
+                <textarea  readonly name="" id="textarea1">Você aceita os termos de serviço </textarea>
+            </div> <br>
+            <span id="botão-center">
+            <input id="enviar" type="submit" value="enviar">
+            </span>
+        </form>
+    </section>
+    </div>
+</main>
+<div class="card mx-auto mt-5" style="width: 25rem;">
+    <div class="card-body">
+      <h5 class="card-title text-center">Gif as background image</h5>
+      <hr>
+     <span class="card-text text-info"> 
+        background-image: url(link to gif)
+     </span>
+     <hr>
+    </div>
+  </div>
+  </div>
 </body>
 </html>
+
+
+
+
+
+
